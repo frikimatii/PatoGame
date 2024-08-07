@@ -1,0 +1,19 @@
+[
+    {
+      "id": "user1UID",
+      "user": "johndoe",
+      "email": "johndoe@example.com",
+      "coin": [0, 0, 0, 0, 0],
+      "date": "2024-08-07T12:34:56.789Z",
+      "active": true
+    },
+    {
+      "id": "user2UID",
+      "user": "janedoe",
+      "email": "janedoe@example.com",
+      "coin": [0, 0, 0, 0, 0],
+      "date": "2024-08-07T12:45:56.789Z",
+      "active": true
+    }
+  ]
+  

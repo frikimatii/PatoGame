@@ -14,15 +14,15 @@ const firebaseConfig = {
   measurementId: "G-H3Z9WFXW4H"
 }
 
-// Initialize Firebase
+// Inicializa Firebase
 const app = initializeApp(firebaseConfig);
 
-// Initialize Firebase Authentication with persistence
+// Inicializa Firebase Authentication con persistencia
 const auth = initializeAuth(app, {
   persistence: getReactNativePersistence(AsyncStorage),
 });
 
-// Initialize Firestore
+// Inicializa Firestore
 const database = getFirestore(app);
 
 export { auth, database };
