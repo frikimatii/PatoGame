@@ -21,12 +21,14 @@ export default function App() {
       <Stack.Navigator>
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Singin" component={Singin} />
+
         <Stack.Screen name="Dashboard" component={DashDoard} />
-        <Stack.Screen name="Game1" component={Game1}/>
-        <Stack.Screen name="Game2" component={Game2}/>
-        <Stack.Screen name="Game3" component={Game3}/>
-        <Stack.Screen name="Game4" component={Game4}/>
-        <Stack.Screen name="Game5" component={Game5}/>
+
+        <Stack.Screen name="Game1" component={Game1} />
+        <Stack.Screen name="Game2" component={Game2} />
+        <Stack.Screen name="Game3" component={Game3} />
+        <Stack.Screen name="Game4" component={Game4} />
+        <Stack.Screen name="Game5" component={Game5} />
       </Stack.Navigator>
     </NavigationContainer>
   )

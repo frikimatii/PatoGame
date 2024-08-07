@@ -33,7 +33,7 @@ export default function Login({ navigation }) {
 
         try {
             await signInWithEmailAndPassword(auth, email, password);
-            Alert.alert("Iniciando Session", ("Bienvenido" + email));
+            Alert.alert("Iniciando Session", ("Bienvenido " + email));
             navigation.navigate('Dashboard')
         }catch(error){
             Alert.alert("Error", "Contrase;a Incorrecta o usuario inconrrecto")

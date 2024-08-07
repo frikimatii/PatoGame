@@ -2,12 +2,11 @@ import React, { useState } from "react";
 import { TextInput, View, Text, Button, Alert } from "react-native";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import { collection, addDoc } from 'firebase/firestore';
-import appFIrebase, { database } from "../firebase"; // Asegúrate de que la importación sea correcta
+import appFIrebase, { database } from "../firebase";
 
 const auth = getAuth(appFIrebase);
 
-export default function Singin({ navigation }) {
-  const [id, setId] = useState("0");
+export default function SignIn({ navigation }) {
   const [user, setUser] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -43,9 +42,8 @@ export default function Singin({ navigation }) {
       // Crear usuario en Firebase Auth
       await createUserWithEmailAndPassword(auth, email, password);
 
-      // Crear datos en Firestore
+      // Crear datos en Firestore con un ID único
       await addDoc(collection(database, "users_game"), {
-        id: id,
         user: user,
         email: email,
         password: password, // Nota: Guardar contraseñas en texto plano no es recomendable
