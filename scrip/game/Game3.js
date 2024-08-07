@@ -1,14 +1,14 @@
 import React from "react";
 import { View, Text } from "react-native";
 
-export default function Game3(){
-    
-    return(
-        <View>
-            <Text>
-                Game3
-            </Text>
-        </View>
+export default function Game3({ route }) {
+    const { userData } = route.params;
 
-    )
+    return (
+        <View>
+            <Text>Game1</Text>
+            <Text>User: {userData.user}</Text>
+            <Text>Coin[0]: {userData.coin[2]}</Text>
+        </View>
+    );
 }

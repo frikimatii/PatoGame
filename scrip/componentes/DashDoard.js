@@ -64,11 +64,11 @@ export default function Dashboard({ navigation }) {
             </View>
             <View>
                 <Text>Games</Text>
-                <Button title="Game-1" onPress={() => navigation.navigate("Game1")} />
-                <Button title="Game-2" onPress={() => navigation.navigate("Game2")} />
-                <Button title="Game-3" onPress={() => navigation.navigate("Game3")} />
-                <Button title="Game-4" onPress={() => navigation.navigate("Game4")} />
-                <Button title="Game-5" onPress={() => navigation.navigate("Game5")} />
+                <Button title="Game-1" onPress={() => navigation.navigate("Game1", { userData })} />
+                <Button title="Game-2" onPress={() => navigation.navigate("Game2", { userData })} />
+                <Button title="Game-3" onPress={() => navigation.navigate("Game3", { userData })} />
+                <Button title="Game-4" onPress={() => navigation.navigate("Game4", { userData })} />
+                <Button title="Game-5" onPress={() => navigation.navigate("Game5", { userData })} />
             </View>
             <Button title="Cerrar Sesión" onPress={handleSignOut} />
         </View>
